@@ -15,11 +15,20 @@ function setMovieData(index,value){
     localStorage.setItem('setValue',value)
 }
 
+// Getting the items
+function getItem(key){
+  try{
+     return JSON.parse(localStorage.getItem(key))
+  }catch{
+     return []
+  }
+}
+
 // Populate the UI
 function populatedUI(){
-  const getSelectedSeats= JSON.parse(localStorage.getItem('selectedSeats'))
-  const getIndex= JSON.parse(localStorage.getItem('setIndex'))
-  const getValue= JSON.parse(localStorage.getItem('setValue'))
+  const getSelectedSeats= getItem('selectedSeats')
+  const getIndex= getItem('setIndex')
+  const getValue= getItem('setValue')
 
   getSelectedSeats.forEach(index =>{
       seats[index].classList.add('selected')
