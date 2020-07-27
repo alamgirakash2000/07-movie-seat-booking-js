@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Movie seat booking</title>
+</head>
+<body>
+    <section class="seat-container">
+       <header class="movie-bar">
+           <label for="">Select a movie :</label>
+           <select name="" id="movie">
+               <option value="12">Avengers Endgame ($12)</option>
+               <option value="10">Avatar 2 ($10)</option>
+               <option value="11">Matrix 4 ($11)</option>
+               <option value="10">Toy story 4 ($10)</option>
+               <option value="13">Lord of the rings ($13)</option>
+           </select>
+       </header> 
+
+       <section class="seat-bar">
+           <ul>
+               <li><div class="seat"></div><small>N/A</small></li>
+               <li><div class="seat selected"></div><small>Selected</small></li>
+               <li><div class="seat occupied"></div><small>Occupied</small></li>
+           </ul>
+       </section>
+
+       <section>
+           <div class="screen"></div>
+       </section>
+
+       <section class="seats">
+           <div class="row">
+               <div class="seat"></div>
+               <div class="seat"></div>
+               <div class="seat"></div>
+               <div class="seat occupied"></div>
+               <div class="seat"></div>
+               <div class="seat"></div>
+               <div class="seat"></div>
+        </div>
+           <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat  occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat  occupied"></div>
+            <div class="seat occupied"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+        </div>
+       </section>
+
+       <section class="description">
+           <p>You have selected <span class='count'>0</span> seats for a price of $<span class="price">0</span></p>
+       </section>
+
+       <button id="booking-btn">Confirm Booking</button>
+    </section>
+    <script src="js/function.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
