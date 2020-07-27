@@ -30,10 +30,14 @@ function populatedUI(){
   const getIndex= getItem('setIndex')
   const getValue= getItem('setValue')
 
-  getSelectedSeats.forEach(index =>{
-      seats[index].classList.add('selected')
-  })
-   price= getValue
+  if(getSelectedSeats){
+    getSelectedSeats.forEach(index =>{
+        seats[index].classList.add('selected')
+    })
+  }
+  if(getValue){
+    price= getValue
+  }
    if (getIndex !== null) {
     ticketPrice.selectedIndex = getIndex;
   }

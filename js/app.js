@@ -5,7 +5,7 @@ const count= document.querySelector('.count')
 const totalPrice=document.querySelector('.price')
 
 
-var price= +ticketPrice.value
+var price= +document.getElementById('firstMovie').value
 populatedUI()
 container.addEventListener('click', e =>{
     if(e.target.classList.contains('seat') && !e.target.classList.contains('occupied')){
