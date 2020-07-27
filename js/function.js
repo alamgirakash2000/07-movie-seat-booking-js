@@ -9,6 +9,7 @@ function updateData(){
     totalPrice.innerText= selected.length*price
 }
 
+// Set movie data
 function setMovieData(index,value){
     localStorage.setItem('setIndex',index)
     localStorage.setItem('setValue',value)
